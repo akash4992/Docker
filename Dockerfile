@@ -1,4 +1,4 @@
-FROM akash729/campaign
+FROM akash729/campaign:2
 EXPOSE  8193
 RUN  mkdir  /code
 WORKDIR /code
