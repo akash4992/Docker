@@ -1,0 +1,13 @@
+version: '3'
+services:
+  campaign:
+    container_name: campaign
+    env_file: .env
+    command: python manage.py runserver 0.0.0.0:8193
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 8193:8193
+    
+    tty: true
