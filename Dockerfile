@@ -1,7 +1,7 @@
 FROM akash729/campaign:2
 EXPOSE  8193
-RUN  mkdir  /code
-WORKDIR /code
-COPY . /code/
-COPY requirements.txt /source/
+RUN  mkdir  /deploy
+WORKDIR /deploy
+COPY . /deploy/
+COPY requirements.txt /deploy/
 RUN pip install -r requirements.txt
